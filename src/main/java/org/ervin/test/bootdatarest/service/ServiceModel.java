@@ -17,7 +17,7 @@ import lombok.Setter;
 @Entity(name="Service")
 @Table(name="Service")
 @Inheritance(strategy = InheritanceType.SINGLE_TABLE)
-@DiscriminatorColumn(name="service_type", 
+@DiscriminatorColumn(name="service_group", 
   discriminatorType = DiscriminatorType.STRING)
 @Getter @Setter @NoArgsConstructor
 public class ServiceModel {
@@ -26,6 +26,5 @@ public class ServiceModel {
     private long id;
 
     private String serviceName;
-    private String serviceGroup;
     private Double servicePrice; 
 }

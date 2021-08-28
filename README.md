@@ -26,7 +26,6 @@ HEADER
 eg BODY
 {
     "serviceName":"Math Class",
-    "serviceGroup":"Classes",
     "servicePrice":500,
     "serviceDuration":40
 }
@@ -56,7 +55,6 @@ docker load --input build/jib-image.tar
 Run Docker Image
 ---------------------
 docker run -d -p 8080:8080 boot-data-rest:0.0.1-SNAPSHOT
-
 
 
 Option #2 DOCKERFILE CREATION AND RUNNING 
